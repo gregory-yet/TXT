@@ -36,6 +36,8 @@ include 'header.php';
 			<h2><?php echo htmlspecialchars($title_txt); ?></h2>
 			<hr/>
 			<p><?php echo nl2br(htmlspecialchars($txt)); ?></p>
+			<br/>
+			<textarea style="resize:vertical;height:150px;" class="form-control"><?php echo htmlspecialchars($txt); ?></textarea>
 			<hr class="mini" />
 			<ul class="list-inline text-center">
 				<li><a href="http://realitygaming.fr/members/wayz-gtp.14838/" class="fui-link social" title="Profil RealityGaming"></a></li>
@@ -54,6 +56,19 @@ include 'header.php';
 		$(this).parent().attr('class', 'input-group focus');
 	}).on('blur', function(){
 		$(this).parent().attr('class', 'input-group');
+	});
+	</script>
+	<script>
+	$("textarea").focus(function() {
+		var $this = $(this);
+		$this.select();
+
+		// Work around Chrome's little problem
+		$this.mouseup(function() {
+			// Prevent further mouseup intervention
+			$this.unbind("mouseup");
+			return false;
+		});
 	});
 	</script>
 </body>
