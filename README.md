@@ -9,3 +9,10 @@ Téléchargement
 ```
 git clone https://github.com/WayzRG/TXT.git TXT
 ```
+
+Mettre en route
+---
+
+* Créer une base de données `txt` puis importer le fichier `content.sql`
+* Configurer les identifiants de la base de données
+* Mettre les fichiers php en ligne
