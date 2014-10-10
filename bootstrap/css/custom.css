@@ -1,0 +1,13 @@
+hr {
+	border-top: 1px solid #ECECEC;
+}
+hr.mini {
+	width: 50%;
+}
+.social {
+	font-size: 20pt;
+	color: #34495e;
+}
+.social:hover {
+	color: #5B758F;
+}
