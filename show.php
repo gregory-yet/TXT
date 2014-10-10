@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 	}
 }
 
-$title = "TXT";
+$title = "TXT - ".htmlspecialchars($title_txt);
 
 include 'header.php';
 

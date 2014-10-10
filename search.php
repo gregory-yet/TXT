@@ -2,9 +2,6 @@
 
 require 'db.php';
 
-$title_txt = '404';
-$txt = 'Le texte est indisponible !';
-
 if($_SERVER['REQUEST_METHOD'] == 'GET'){
 	if(isset($_GET['s'])){
 		$search = $_GET['s'];
@@ -15,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 	}
 }
 
-$title = "TXT";
+$title = "TXT - ".htmlspecialchars($_GET['s']);
 
 include 'header.php';
 
