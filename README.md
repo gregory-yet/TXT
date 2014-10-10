@@ -14,5 +14,5 @@ Mettre en route
 ---
 
 * Créer une base de données `txt` puis importer le fichier `content.sql`
-* Configurer les identifiants de la base de données
+* Configurer les identifiants de la base de données dans le fichier `db.php`
 * Mettre les fichiers php en ligne
