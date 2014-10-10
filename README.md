@@ -7,5 +7,5 @@ Téléchargement
 ---
 
 ```
-git clone https://github.com/WayzRG/txt.git TXT
+git clone https://github.com/WayzRG/TXT.git TXT
 ```
